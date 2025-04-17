@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: cursive, sans-serif;
+}
+
+body {
+  background-image: url('https://media.istockphoto.com/id/926497236/photo/tropical-sea-in-summer.jpg?s=612x612&w=0&k=20&c=SgT--E-a5_UF4GPVnpC6r1IDtThuDiUHmtTbhHg5zJA=');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  max-width: 600px;
+  min-width: 400px;
+  width: 90%;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 15px;
+  color: white;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  margin: 20px;
+  overflow: hidden;
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: orange;
+}
+
+h4 {
+  color: orange;
+}
+
+p {
+  color: lightgray;
+  margin-bottom: 10px;
+}
+
+.input-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.input {
+  background-color: rgba(0, 0, 0, 0.4);
+  flex: 1;
+  padding: 10px;
+  border: none;
+  margin-right: 10px;
+  border-radius: 20px;
+  color: white;
+  border: none;
+  outline: none;
+}
+
+.search-button {
+  padding: 10px 15px;
+  border-radius: 20px;
+  border: none;
+  color: white;
+  background-color: orange;
+}
+
+.today {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  margin-top: 20px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  margin-right: 10px;
+  transition: all 0.7s;
+}
+
+.today div {
+  overflow: hidden;
+}
+
+.today img {
+  margin-right: 30px;
+  width: 100px;
+  height: 100px;
+}
+
+.city {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.upcoming {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.upcoming div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex: 1;
+  flex-wrap: wrap;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 15px;
+  border-radius: 20px;
+}
+
+@media screen and (max-width: 680px) {
+  .today {
+    flex-direction: column;
+  }
+
+  .container {
+    min-width: 300px;
+  }
+
+  .today img {
+    margin-right: 0;
+  }
+}
+
+.clear {
+  background-image: url('https://st4.depositphotos.com/1005844/30671/i/450/depositphotos_306719508-stock-photo-blue-sky-sun-background.jpg');
+}
+
+.clouds {
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhUs8gSeqNrWZG1-IMYjOqf558OgNeC7zhrA&s');
+}
+
+.rain {
+  background-image: url('https://img.freepik.com/free-photo/weather-effects-composition_23-2149853295.jpg');
+}
+
+.snow {
+  background-image: url('https://ewscripps.brightspotcdn.com/dims4/default/f25af1b/2147483647/strip/true/crop/1920x1080+0+0/resize/1280x720!/quality/90/?url=http%3A%2F%2Fewscripps-brightspot.s3.amazonaws.com%2F1f%2F37%2Fb17f3c6d43f68196740947bfa666%2F1.jpg');
+}
+
+.default {
+  background-image: url('https://images.pexels.com/photos/459451/pexels-photo-459451.jpeg?cs=srgb&dl=pexels-pixabay-459451.jpg&fm=jpg');
+}
+
+.invalid {
+  color: orange;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: -5px;
+}

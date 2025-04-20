@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: cursive;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+  background: linear-gradient(to right, #bdd7ff, #0247f6);
+}
+
+.container {
+  text-align: center;
+  background-color: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.container h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #333;
+}
+
+.cells {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.cell {
+  height: 100px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  background-color: #e0e0e0;
+  cursor: pointer;
+}
+
+.container .result {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.container .reset-btn {
+  padding: 10px 20px;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.container .reset-btn:hover {
+  background-color: darkgreen;
+}
+
+.cell.pattern {
+  background-color: green;
+  color: white;
+  animation: glow 1s infinite alternate;
+}
+
+.cell:hover {
+  transform: scale(1.05);
+}
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 5px white;
+  }
+
+  to {
+    box-shadow: 0 0 20px white;
+  }
+}

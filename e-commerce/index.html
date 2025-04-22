@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav>
+    <div class="logo">TIMELESS WATCHES</div>
+    <div class="middle-section">
+      <input type="text" class="search-bar" placeholder="Search...">
+      <button class="search-button">🔍</button>
+    </div>
+    <div class="right-section">
+      <ul>
+        <li>Shop</li>
+        <li>New Arrivals</li>
+        <li>Brands</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <div class="main-left">
+      <div class="left-top">
+        <img src="https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/26/1542852/1.jpg?5491
+        " alt="" class="main-img">
+      </div>
+      <div class="left-bottom">
+        <div><img src="https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/26/1542852/7.jpg?5491"
+            alt=""
+            onclick="changeImg('https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/26/1542852/7.jpg?5491')">
+        </div>
+        <div><img src="https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/26/1542852/6.jpg?5491"
+            alt=""
+            onclick="changeImg('https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/26/1542852/6.jpg?5491')">
+        </div>
+        <div><img src=" https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/26/1542852/5.jpg?5491"
+            alt=""
+            onclick="changeImg('https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/26/1542852/5.jpg?5491')">
+        </div>
+        <div><img src=" https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/26/1542852/3.jpg?5491"
+            alt=""
+            onclick="changeImg('https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/26/1542852/3.jpg?5491')">
+        </div>
+        <div><img src=" https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/26/1542852/4.jpg?5491"
+            alt=""
+            onclick="changeImg('https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/26/1542852/4.jpg?5491')">
+        </div>
+        <div><img src="https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/26/1542852/2.jpg?5491"
+            alt=""
+            onclick="changeImg('https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/26/1542852/2.jpg?5491')">
+        </div>
+      </div>
+    </div>
+    <div class="main-right">
+      <h2>Elegant Luxury Watch</h2>
+      <p class="title">Prestigie Time Co</p>
+      <p class="prices"><span class="price">$499.99</span> <span class="orignial-price">$799.99</span> 38% off
+      </p>
+      <p class="description">This luxurious timepiece combines elegance with precision craftsmanship. Perfect for formal
+        occasions or
+        everyday wear, it features premium materials and impeccable design.</p>
+      <p class="rating">
+        <span class="star">⭐</span>
+        <span class="star">⭐</span>
+        <span class="star">⭐</span>
+        <span class="star">⭐</span>
+        <span class="star">⭐</span>
+        <span class="rated">Rated 4.8/5 (256 reviews)</span>
+      </p>
+      <button class="btn" onclick="reduceQuantity()">-</button>
+      <input type="number" class="quantity">
+      <button class="btn" onclick="addQuantity()">+</button>
+      <button class="add-button">Add to Bag</button>
+      <div class="offer">
+        <h2>Limited-Time Offer!</h2>
+        <p>Get an additional 10% off your first purchase when you sign up for our newsletter.</p>
+        <button class="sign-up-button">Sign up Now</button>
+      </div>
+    </div>
+  </main>
+  <script>
+    function addQuantity() {
+      document.querySelector('.quantity').value = +document.querySelector('.quantity').value + 1;
+    }
+
+    function reduceQuantity() {
+      if (document.querySelector('.quantity').value == 0) {
+        return;
+      }
+      document.querySelector('.quantity').value = +document.querySelector('.quantity').value - 1;
+    }
+
+    function changeImg(url) {
+      document.querySelector('.main-img').src = url;
+    }
+  </script>
+</body>
+
+</html>
